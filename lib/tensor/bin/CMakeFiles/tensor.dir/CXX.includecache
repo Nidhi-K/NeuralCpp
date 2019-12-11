@@ -6,15 +6,13 @@
 
 #IncludeRegexTransform: 
 
-/media/advait/DATA/Advait/Handouts_and_assignments/NeuralCpp/lib/tensor/include/tensor/tensor.h
+/media/advait/DATA/Advait/Handouts_and_assignments/NeuralCpp/lib/tensor/src/tensor.cpp
+iostream
+-
 memory
 -
 array
 -
 cassert
 -
-
-/media/advait/DATA/Advait/Handouts_and_assignments/NeuralCpp/lib/tensor/src/tensor.cpp
-../include/tensor/tensor.h
-/media/advait/DATA/Advait/Handouts_and_assignments/NeuralCpp/lib/tensor/include/tensor/tensor.h
 

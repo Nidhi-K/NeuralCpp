@@ -9,5 +9,5 @@ add_subdirectory(${CMAKE_SOURCE_DIR}/test)
 link_directories(${CMAKE_SOURCE_DIR}/lib/tensor)
 
 enable_testing()
-# add_test(NAME test_cmake COMMAND test_cmake)
+add_test(NAME test_cmake COMMAND test_cmake)
 add_test(NAME test_tensor_const0 COMMAND test_tensor_const0)
