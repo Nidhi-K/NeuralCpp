@@ -122,6 +122,19 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named test_cmake
+
+# Build rule for target.
+test_cmake: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 test_cmake
+.PHONY : test_cmake
+
+# fast build rule for target.
+test_cmake/fast:
+	$(MAKE) -f test/CMakeFiles/test_cmake.dir/build.make test/CMakeFiles/test_cmake.dir/build
+.PHONY : test_cmake/fast
+
+#=============================================================================
 # Target rules for targets named test_tensor_const0
 
 # Build rule for target.
@@ -143,6 +156,7 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... test"
+	@echo "... test_cmake"
 	@echo "... test_tensor_const0"
 .PHONY : help
 

@@ -1,19 +1,34 @@
-Start testing: Dec 09 18:43 EST
+Start testing: Dec 11 10:29 EST
 ----------------------------------------------------------
-1/1 Testing: test_tensor_const0
-1/1 Test: test_tensor_const0
-Command: "/media/advait/DATA/Advait/Handouts_and_assignments/NeuralCpp/bin/test/test_tensor_const0"
+1/2 Testing: test_cmake
+1/2 Test: test_cmake
+Command: "/media/advait/DATA/Advait/Handouts_and_assignments/NeuralCpp/bin/test/test_cmake"
 Directory: /media/advait/DATA/Advait/Handouts_and_assignments/NeuralCpp/bin
-"test_tensor_const0" start time: Dec 09 18:43 EST
+"test_cmake" start time: Dec 11 10:29 EST
 Output:
 ----------------------------------------------------------
-1024
+testing cmake for project
 <end of output>
 Test time =   0.00 sec
 ----------------------------------------------------------
 Test Passed.
-"test_tensor_const0" end time: Dec 09 18:43 EST
+"test_cmake" end time: Dec 11 10:29 EST
+"test_cmake" time elapsed: 00:00:00
+----------------------------------------------------------
+
+2/2 Testing: test_tensor_const0
+2/2 Test: test_tensor_const0
+Command: "/media/advait/DATA/Advait/Handouts_and_assignments/NeuralCpp/bin/test/test_tensor_const0"
+Directory: /media/advait/DATA/Advait/Handouts_and_assignments/NeuralCpp/bin
+"test_tensor_const0" start time: Dec 11 10:29 EST
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"test_tensor_const0" end time: Dec 11 10:29 EST
 "test_tensor_const0" time elapsed: 00:00:00
 ----------------------------------------------------------
 
-End testing: Dec 09 18:43 EST
+End testing: Dec 11 10:29 EST

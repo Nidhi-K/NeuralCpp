@@ -67,17 +67,6 @@ rebuild_cache/fast: rebuild_cache
 
 .PHONY : rebuild_cache/fast
 
-# Special rule for the target edit_cache
-edit_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	/usr/local/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
-.PHONY : edit_cache
-
-# Special rule for the target edit_cache
-edit_cache/fast: edit_cache
-
-.PHONY : edit_cache/fast
-
 # Special rule for the target test
 test:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running tests..."
@@ -88,6 +77,17 @@ test:
 test/fast: test
 
 .PHONY : test/fast
+
+# Special rule for the target edit_cache
+edit_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
+	/usr/local/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+.PHONY : edit_cache
+
+# Special rule for the target edit_cache
+edit_cache/fast: edit_cache
+
+.PHONY : edit_cache/fast
 
 # The main all target
 all: cmake_check_build_system
@@ -122,6 +122,21 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
+test/CMakeFiles/test_cmake.dir/rule:
+	cd /media/advait/DATA/Advait/Handouts_and_assignments/NeuralCpp/bin && $(MAKE) -f CMakeFiles/Makefile2 test/CMakeFiles/test_cmake.dir/rule
+.PHONY : test/CMakeFiles/test_cmake.dir/rule
+
+# Convenience name for target.
+test_cmake: test/CMakeFiles/test_cmake.dir/rule
+
+.PHONY : test_cmake
+
+# fast build rule for target.
+test_cmake/fast:
+	cd /media/advait/DATA/Advait/Handouts_and_assignments/NeuralCpp/bin && $(MAKE) -f test/CMakeFiles/test_cmake.dir/build.make test/CMakeFiles/test_cmake.dir/build
+.PHONY : test_cmake/fast
+
+# Convenience name for target.
 test/CMakeFiles/test_tensor_const0.dir/rule:
 	cd /media/advait/DATA/Advait/Handouts_and_assignments/NeuralCpp/bin && $(MAKE) -f CMakeFiles/Makefile2 test/CMakeFiles/test_tensor_const0.dir/rule
 .PHONY : test/CMakeFiles/test_tensor_const0.dir/rule
@@ -135,6 +150,33 @@ test_tensor_const0: test/CMakeFiles/test_tensor_const0.dir/rule
 test_tensor_const0/fast:
 	cd /media/advait/DATA/Advait/Handouts_and_assignments/NeuralCpp/bin && $(MAKE) -f test/CMakeFiles/test_tensor_const0.dir/build.make test/CMakeFiles/test_tensor_const0.dir/build
 .PHONY : test_tensor_const0/fast
+
+test_cmake.o: test_cmake.cpp.o
+
+.PHONY : test_cmake.o
+
+# target to build an object file
+test_cmake.cpp.o:
+	cd /media/advait/DATA/Advait/Handouts_and_assignments/NeuralCpp/bin && $(MAKE) -f test/CMakeFiles/test_cmake.dir/build.make test/CMakeFiles/test_cmake.dir/test_cmake.cpp.o
+.PHONY : test_cmake.cpp.o
+
+test_cmake.i: test_cmake.cpp.i
+
+.PHONY : test_cmake.i
+
+# target to preprocess a source file
+test_cmake.cpp.i:
+	cd /media/advait/DATA/Advait/Handouts_and_assignments/NeuralCpp/bin && $(MAKE) -f test/CMakeFiles/test_cmake.dir/build.make test/CMakeFiles/test_cmake.dir/test_cmake.cpp.i
+.PHONY : test_cmake.cpp.i
+
+test_cmake.s: test_cmake.cpp.s
+
+.PHONY : test_cmake.s
+
+# target to generate assembly for a file
+test_cmake.cpp.s:
+	cd /media/advait/DATA/Advait/Handouts_and_assignments/NeuralCpp/bin && $(MAKE) -f test/CMakeFiles/test_cmake.dir/build.make test/CMakeFiles/test_cmake.dir/test_cmake.cpp.s
+.PHONY : test_cmake.cpp.s
 
 test_tensor_const0.o: test_tensor_const0.cpp.o
 
@@ -170,9 +212,13 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... rebuild_cache"
-	@echo "... edit_cache"
+	@echo "... test_cmake"
 	@echo "... test"
 	@echo "... test_tensor_const0"
+	@echo "... edit_cache"
+	@echo "... test_cmake.o"
+	@echo "... test_cmake.i"
+	@echo "... test_cmake.s"
 	@echo "... test_tensor_const0.o"
 	@echo "... test_tensor_const0.i"
 	@echo "... test_tensor_const0.s"

@@ -47,5 +47,6 @@ set(CMAKE_MAKEFILE_PRODUCTS
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
+  "test/CMakeFiles/test_cmake.dir/DependInfo.cmake"
   "test/CMakeFiles/test_tensor_const0.dir/DependInfo.cmake"
   )

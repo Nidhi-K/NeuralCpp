@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/media/advait/DATA/Advait/Handouts_and_assignments/NeuralCpp/lib/tensor/include/tensor/tensor.h
+/media/advait/DATA/Advait/Handouts_and_assignments/NeuralCpp/lib/tensor/src/tensor.cpp
 memory
 -
 array
@@ -19,6 +19,6 @@ iostream
 -
 array
 -
-../lib/tensor/include/tensor/tensor.h
-/media/advait/DATA/Advait/Handouts_and_assignments/NeuralCpp/lib/tensor/include/tensor/tensor.h
+../lib/tensor/src/tensor.cpp
+/media/advait/DATA/Advait/Handouts_and_assignments/NeuralCpp/lib/tensor/src/tensor.cpp
 
