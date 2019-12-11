@@ -1,0 +1,2 @@
+#define tensor_VERSION_MAJOR @tensor_VERSION_MAJOR@
+#define tensor_VERSION_MINOR @tensor_VERSION_MINOR@

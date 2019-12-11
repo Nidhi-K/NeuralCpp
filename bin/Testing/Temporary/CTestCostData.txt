@@ -1,0 +1,2 @@
+test_tensor_const0 2 0.00129242
+---

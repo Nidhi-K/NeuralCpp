@@ -1,0 +1,1 @@
+/usr/bin/c++     CMakeFiles/test_tensor_const0.dir/test_tensor_const0.cpp.o  -o test_tensor_const0 -Wl,-rpath,/media/advait/DATA/Advait/Handouts_and_assignments/NeuralCpp/lib/tensor/bin ../../lib/tensor/bin/libtensor.so 

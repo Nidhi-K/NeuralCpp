@@ -1,0 +1,19 @@
+Start testing: Dec 09 18:43 EST
+----------------------------------------------------------
+1/1 Testing: test_tensor_const0
+1/1 Test: test_tensor_const0
+Command: "/media/advait/DATA/Advait/Handouts_and_assignments/NeuralCpp/bin/test/test_tensor_const0"
+Directory: /media/advait/DATA/Advait/Handouts_and_assignments/NeuralCpp/bin
+"test_tensor_const0" start time: Dec 09 18:43 EST
+Output:
+----------------------------------------------------------
+1024
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"test_tensor_const0" end time: Dec 09 18:43 EST
+"test_tensor_const0" time elapsed: 00:00:00
+----------------------------------------------------------
+
+End testing: Dec 09 18:43 EST
